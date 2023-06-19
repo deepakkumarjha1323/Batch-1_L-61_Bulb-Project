@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Js OnClick Event Project</title>
+        <style>
+            body{background-color: black;}
+            .d_box{
+                width: 400px;
+                height: 400px;
+                text-align: center;
+                margin: auto;
+                margin-top: 7%;
+            }
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        
+        <div class="d_box">
+            <img id="d_img" src="./img/bulb1.png" alt="pic">
+            <button onclick="clickMe('on')">Light On</button>
+            <button onclick="clickMe('off')">Light Off</button>
+        </div>
+
+        <script>
+            // Function Defination
+            function clickMe(state){
+                // Function body
+                // Object.member
+                /*
+                    if(conditions){
+                        // True
+                    }else{
+                        // false
+                    }
+                */
+               if(state == 'on'){
+                    // True
+                    document.body.style.backgroundColor= 'yellow';
+                    // object.method
+                    document.getElementById('d_img').setAttribute('src','./img/bulb2.png');
+
+               }else{
+                    // False
+                    document.body.style.backgroundColor= 'black';
+                    // object.method
+                    document.getElementById('d_img').setAttribute('src','./img/bulb1.png');
+               }
+            }
+
+        </script>
+
+    </body>
+</html>
